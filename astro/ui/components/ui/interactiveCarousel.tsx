@@ -28,8 +28,8 @@ const InteractiveCarousel = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden sm:inline" />
+      <CarouselNext className="hidden sm:inline" />
     </Carousel>
   );
 };
