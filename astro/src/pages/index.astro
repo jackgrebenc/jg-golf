@@ -1,16 +1,26 @@
 ---
-
+import "../styles/global.css";
+import { Button } from "@/components/ui/button"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/jg-golf/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Judi Grebenc Golf</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="m-10 bg-linear-to-r from-emerald-50 to-emerald-100">
+		<h1 class="text-3xl font-bold text-blue-500">Judi Grebenc Golf</h1>
+		<section class="my-4">
+		<div class="flex w-1/3">
+			<div>
+			<h2 class="text-xl font-bold text-emerald-500">About Me</h2>
+			<p> I have been a golf instructor teaching women how to hit clubs for over 2 years. I am a passionate golfer and enjoy sharing my breadth of knowledge with all my golf clients.</p>
+			</div>
+		</div>
+		</section>
+		<Button>Book Me</Button>
 	</body>
 </html>
