@@ -92,9 +92,6 @@ const TestimonalsCarousel = () => {
           )
         )}
       </CarouselContent>
-
-      <CarouselPrevious className="hidden sm:inline" />
-      <CarouselNext className="hidden sm:inline" />
     </Carousel>
   );
 };
