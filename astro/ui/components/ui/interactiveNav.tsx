@@ -20,8 +20,8 @@ export const InteractiveNav = ({ navItems }: InteractiveNavProps) => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        {navItems.map((item) => (
-          <NavigationMenuItem>
+        {navItems.map((item, index) => (
+          <NavigationMenuItem key={index}>
             <NavigationMenuLink asChild>
               <a className="text-xl" href={item.href}>
                 {item.title}
