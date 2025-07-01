@@ -20,18 +20,17 @@ interface InteractiveNavProps {
 }
 
 export const InteractiveNav = ({ navItems }: InteractiveNavProps) => {
-  const { isMobile } = useWindowSize();
-
-  return isMobile ? (
-    <HamburgerMenu navItems={navItems} />
-  ) : (
-    <FullMenu navItems={navItems} />
+  return (
+    <>
+      <HamburgerMenu navItems={navItems} />
+      <FullMenu navItems={navItems} />
+    </>
   );
 };
 
 export const FullMenu = ({ navItems }: InteractiveNavProps) => {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="hidden md:inline">
       <NavigationMenuList>
         {navItems.map((item, index) => (
           <NavigationMenuItem key={index}>
