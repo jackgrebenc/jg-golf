@@ -1,9 +1,54 @@
 ---
 import SiteLayout from "src/layouts/SiteLayout.astro";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 ---
 
 <SiteLayout>
-  <div class="flex w-full py-20 text-center justify-center">
-    <p>Under Construction</p>
-  </div>
+  <section
+    class="py-10 px-6 bg-emerald-50/50 w-full text-center justify-center"
+  >
+    <div class="max-w-6xl mx-auto flex flex-col gap-20">
+      <div>
+        <h1 class="text-xl text-emerald-800 font-bold">One Swing at a Time</h1>
+        <p>
+          Golf doesn’t have to be complicated or intimidating. I make learning
+          the game simple, encouraging, and fun by breaking skills down into
+          clear, easy steps. We’ll start with the basics — your grip, posture,
+          and setup — and build a full swing that feels natural, consistent, and
+          easy to repeat. With the right drills and tools, you’ll begin to feel
+          your swing, trust it, and gain the confidence to enjoy the game on
+          your own terms. My goal is to help you believe in your game, enjoy the
+          process, and step onto the course with confidence and a smile.
+        </p>
+      </div>
+      <div>
+        <h1 class="text-xl text-emerald-800 font-bold">
+          Your Lesson Experience
+        </h1>
+        <p>
+          All lessons take place at a state-of-the-art indoor golf simulator in
+          Burlington, Ontario. The rate is $125/hour, which includes simulator
+          fees and taxes. You’re welcome to enjoy a private session — or bring a
+          friend to share the experience and the cost! Lessons are paid in full
+          at the time of booking in order to secure your spot. I love coaching
+          indoors because the simulator provides detailed swing data and video
+          feedback. This technology makes it easier to understand your swing
+          mechanics and see real progress, faster.
+        </p>
+      </div>
+      <div>
+        <h1 class="text-xl text-emerald-800 font-bold">Cancellation Policy</h1>
+        <p>
+          Cancellation of a lesson must be made at least 48 hours prior in order
+          to reschedule.
+        </p>
+      </div>
+    </div>
+  </section>
 </SiteLayout>
