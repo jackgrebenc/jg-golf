@@ -1,0 +1,21 @@
+---
+import { InteractiveNav, type NavItem } from "@/components/ui/interactiveNav";
+
+const NavItems: NavItem[] = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "Lessons",
+    href: "/lessons",
+  },
+];
+---
+
+<header class="md:py-2 text-center bg-white shadow-md sticky top-0 z-50">
+  <div class="flex w-full justify-around">
+    <img class="w-24 pt-2" src="/golftutorLogo.png" />
+    <InteractiveNav navItems={NavItems} client:load />
+  </div>
+</header>
