@@ -53,7 +53,7 @@ export default function HamburgerMenu({ navItems }: InteractiveNavProps) {
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="default" className="md:hidden">
-          <img src="menu.svg" />
+          <img src="/menu.svg" />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
