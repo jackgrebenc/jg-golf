@@ -1,4 +1,5 @@
 ---
+import { Button } from "@/components/ui/button";
 import SiteLayout from "src/layouts/SiteLayout.astro";
 ---
 
@@ -8,19 +9,21 @@ import SiteLayout from "src/layouts/SiteLayout.astro";
   >
     <p class="text-2xl font-bold text-center text-emerald-800 mb-10">Lessons</p>
     <div
-      class="max-w-6xl mx-auto flex flex-col gap-20 bg-white p-4 rounded-lg shadow-lg"
+      class="max-w-6xl mx-auto flex flex-col gap-20 bg-white px-4 pt-4 pb-10 rounded-lg shadow-lg"
     >
       <div>
         <h1 class="text-xl text-emerald-800 font-bold">One Swing at a Time</h1>
         <p>
-          Golf doesn’t have to be complicated or intimidating. I make learning
-          the game simple, encouraging, and fun by breaking skills down into
-          clear, easy steps. We’ll start with the basics — your grip, posture,
-          and setup — and build a full swing that feels natural, consistent, and
-          easy to repeat. With the right drills and tools, you’ll begin to feel
-          your swing, trust it, and gain the confidence to enjoy the game on
-          your own terms. My goal is to help you believe in your game, enjoy the
-          process, and step onto the course with confidence and a smile.
+          Golf doesn’t have to be complicated or intimidating. Working with me
+          you will receive golf instruction from a female perspective—designed
+          to make learning the game easy, encouraging, and fun by breaking
+          skills down into clear, simple steps. We’ll start with the basics —
+          your grip, posture, and setup — and build a full swing that feels
+          natural, consistent, and repeatable. With the right drills and tools,
+          you’ll begin to <i>feel</i> your swing, trust it, and gain the confidence
+          to enjoy playing golf on your own terms. My goal is to help you believe
+          in your game, enjoy the process, and step onto the course feeling ready
+          and relaxed.
         </p>
       </div>
       <div>
@@ -37,6 +40,9 @@ import SiteLayout from "src/layouts/SiteLayout.astro";
           feedback. This technology makes it easier to understand your swing
           mechanics and see real progress, faster.
         </p>
+        <Button className="mt-4" size="lg">
+          <a href="mailto:info@thegolftutor.ca"> Book a Lesson </a>
+        </Button>
       </div>
       <div>
         <h1 class="text-xl text-emerald-800 font-bold">Cancellation Policy</h1>

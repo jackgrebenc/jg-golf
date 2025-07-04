@@ -13,6 +13,7 @@ import { useWindowSize } from "@/lib/useWindowSize";
 export type NavItem = {
   title: string;
   href: string;
+  button?: boolean;
 };
 
 interface InteractiveNavProps {
@@ -35,9 +36,15 @@ export const FullMenu = ({ navItems }: InteractiveNavProps) => {
         {navItems.map((item, index) => (
           <NavigationMenuItem key={index}>
             <NavigationMenuLink asChild>
-              <a className="text-xl" href={item.href}>
-                {item.title}
-              </a>
+              {item.button ? (
+                <Button size="lg">
+                  <a href="mailto:info@thegolftutor.ca"> {item.title} </a>
+                </Button>
+              ) : (
+                <a className="text-xl" href={item.href}>
+                  {item.title}
+                </a>
+              )}
             </NavigationMenuLink>
           </NavigationMenuItem>
         ))}
@@ -59,11 +66,17 @@ export default function HamburgerMenu({ navItems }: InteractiveNavProps) {
       </SheetTrigger>
       <SheetContent side="bottom" className="px-5 py-5 w-full">
         <nav className="flex flex-col space-y-10 text-emerald-800 font-bold text-center">
-          {navItems.map((item) => (
-            <a key={item.title} className="text-xl" href={item.href}>
-              {item.title}
-            </a>
-          ))}
+          {navItems.map((item) =>
+            item.button ? (
+              <Button size="lg">
+                <a href="mailto:info@thegolftutor.ca"> {item.title} </a>
+              </Button>
+            ) : (
+              <a className="text-xl" href={item.href}>
+                {item.title}
+              </a>
+            )
+          )}
         </nav>
       </SheetContent>
     </Sheet>

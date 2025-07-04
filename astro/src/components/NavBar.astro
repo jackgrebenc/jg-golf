@@ -18,12 +18,17 @@ const NavItems: NavItem[] = [
     title: "Contact",
     href: "/contact",
   },
+  {
+    title: "Book Lesson",
+    href: "mailto:info@thegolftutor.ca",
+    button: true,
+  },
 ];
 ---
 
 <header class="md:py-2 text-center bg-white shadow-md sticky top-0 z-50">
   <div class="flex w-full justify-around items-center">
-    <img class="w-24 pt-2" src="/golftutorLogo.png" />
+    <img class="w-32 pt-2" src="/golftutorLogo.png" />
     <InteractiveNav navItems={NavItems} client:load />
   </div>
 </header>
