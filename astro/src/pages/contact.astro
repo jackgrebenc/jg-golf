@@ -12,17 +12,15 @@ import SiteLayout from "src/layouts/SiteLayout.astro";
     <div class="mb-10">
       <div class="grid grid-cols-3 gap-4 text-left md:text-center">
         <h3 class="col-span-1 text-emerald-800 font-bold text-xl">Email</h3>
-        <p class="col-span-2">info@thegolftutor.ca</p>
+        <p class="col-span-2">
+          <a
+            href="mailto:info@thegolftutor.ca"
+            class="underline hover:text-gray-500">info@thegolftutor.ca</a
+          >
+        </p>
         <h3 class="col-span-1 text-emerald-800 font-bold text-xl">Cell</h3>
         <p class="col-span-2">(+1) 905-330-7104</p>
       </div>
     </div>
-    <a
-      href="mailto:info@thegolftutor.ca"
-      target="_top"
-      class="h-10 rounded-md px-4 bg-primary text-primary-foreground shadow-xs hover:bg-primary/70 flex items-center justify-center"
-    >
-      Book a Lesson
-    </a>
   </section>
 </SiteLayout>

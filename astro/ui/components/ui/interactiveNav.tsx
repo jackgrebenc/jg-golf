@@ -38,7 +38,7 @@ export const FullMenu = ({ navItems }: InteractiveNavProps) => {
             <NavigationMenuLink asChild>
               {item.button ? (
                 <a
-                  href="mailto:info@thegolftutor.ca"
+                  href="/contact"
                   target="_top"
                   className="h-10 w-fit rounded-md px-4 bg-primary text-primary-foreground shadow-xs hover:bg-primary/70 hover:text-primary-foreground flex items-center justify-center"
                 >
