@@ -1,5 +1,4 @@
 ---
-import { Button } from "@/components/ui/button";
 import SiteLayout from "src/layouts/SiteLayout.astro";
 ---
 
@@ -40,9 +39,15 @@ import SiteLayout from "src/layouts/SiteLayout.astro";
           feedback. This technology makes it easier to understand your swing
           mechanics and see real progress, faster.
         </p>
-        <Button className="mt-4" size="lg">
-          <a href="mailto:info@thegolftutor.ca"> Book a Lesson </a>
-        </Button>
+        <div class="flex items-center justify-center mt-5">
+          <a
+            href="mailto:info@thegolftutor.ca"
+            target="_top"
+            class="h-10 w-fit rounded-md px-4 bg-primary text-primary-foreground shadow-xs hover:bg-primary/70 flex items-center justify-center"
+          >
+            Book a Lesson
+          </a>
+        </div>
       </div>
       <div>
         <h1 class="text-xl text-emerald-800 font-bold">Cancellation Policy</h1>

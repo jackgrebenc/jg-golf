@@ -1,6 +1,5 @@
 ---
 import SiteLayout from "src/layouts/SiteLayout.astro";
-import { Button } from "@/components/ui/button";
 ---
 
 <SiteLayout>
@@ -18,8 +17,12 @@ import { Button } from "@/components/ui/button";
         <p class="col-span-2">(+1) 905-330-7104</p>
       </div>
     </div>
-    <Button size="lg">
-      <a href="mailto:info@thegolftutor.ca"> Book a Lesson </a>
-    </Button>
+    <a
+      href="mailto:info@thegolftutor.ca"
+      target="_top"
+      class="h-10 rounded-md px-4 bg-primary text-primary-foreground shadow-xs hover:bg-primary/70 flex items-center justify-center"
+    >
+      Book a Lesson
+    </a>
   </section>
 </SiteLayout>

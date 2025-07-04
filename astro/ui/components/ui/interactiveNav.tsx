@@ -37,9 +37,13 @@ export const FullMenu = ({ navItems }: InteractiveNavProps) => {
           <NavigationMenuItem key={index}>
             <NavigationMenuLink asChild>
               {item.button ? (
-                <Button size="lg">
-                  <a href="mailto:info@thegolftutor.ca"> {item.title} </a>
-                </Button>
+                <a
+                  href="mailto:info@thegolftutor.ca"
+                  target="_top"
+                  className="h-10 w-fit rounded-md px-4 bg-primary text-primary-foreground shadow-xs hover:bg-primary/70 hover:text-primary-foreground flex items-center justify-center"
+                >
+                  Book a Lesson
+                </a>
               ) : (
                 <a className="text-xl" href={item.href}>
                   {item.title}
